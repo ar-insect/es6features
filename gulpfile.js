@@ -4,6 +4,11 @@ var open = require("gulp-open");
 var rename = require("gulp-rename");
 require('shelljs/global');
 
+if (!which('tocmd_conf')) {
+  echo('Sorry, this script requires tocmd, please gem install tocmd');
+  exit(1);
+}
+
 var options = {}
 gulp.task('deploy', function () {
     return gulp.src('./preview/**/*')

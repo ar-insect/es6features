@@ -1,9 +1,9 @@
 {
-  "name": "node-http-practice",
+  "name": "es6reatures",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "npm demo/bin/www"
+    "start": "./node_modules/.bin/gulp"
   },
   "dependencies": {
   },
